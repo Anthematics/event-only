@@ -1,0 +1,54 @@
+<%form_for new_user do%>
+  <!-- <p>
+    <label for="">Full name</label>
+    <input type="text" name="job_application[full_name]" id="job_application_full_name" />
+  </p> -->
+<p>
+  <%=f.label:Full_name%>
+  <%=f.text_field:full_name%>
+</p>
+  <!-- <p>
+    <label for="job_application_phone">Phone</label>
+    <input type="tel" name="job_application[phone]" id="job_application_phone" />
+  </p> -->
+
+<p>
+  <%=f.label:job_application_phone%>
+  <%f.text_field:Phone_number%>
+</p>
+
+<!-- <p>
+    <label for="job_application_hobby">Hobby</label>
+    <input type="text" name="job_application[hobby]" id="job_application_hobby" />
+</p> -->
+<p>
+  <%=f.label:hobby%>
+  <%=f.text_field:hobby%>
+</p>
+
+
+  <!-- <p>
+    <label for="job_application_years_experience">Years experience</label>
+    <input type="number" name="job_application[years_experience]" id="job_application_years_experience" />
+  </p> -->
+<p>
+  <%f.label:experience%>
+  <%f.text_field:years_experience%>
+</p>
+
+
+<!-- <p>
+  <label for="job_application_available_date">Available date</label>
+  <input type="date" name="job_application[available_date]" id="job_application_available_date" />
+</p> -->
+
+<p>
+  <%= f.label=available_date%>
+  <%=f.text_field:available_date %>
+</p>
+
+<p>
+  <%=f.submit="submit"%>
+</p>
+
+<%end%>
